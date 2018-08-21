@@ -67,12 +67,12 @@ def get_anchor(reuse_variables):
     return intra_anchors, cross_anchors
 
 
-def association_loss(features_cam, intra_anchors_n, cross_anchor_n, labels_cam):
+def association_loss(features_cam, intra_anchors_n, cross_anchors_n, labels_cam):
     """
     This function compute two association losses.
     :param features_cam: features under each camera
     :param intra_anchors_n: intra-anchor under each camera
-    :param cross_anchor_n: cross-anchor across camera
+    :param cross_anchors_n: cross-anchor across camera
     :param labels_cam: tracket id under each camera
     :return: final loss value
     """
@@ -89,7 +89,7 @@ def association_loss(features_cam, intra_anchors_n, cross_anchor_n, labels_cam):
         # compute the distance to the positive pairs:
         # corresponding cross-anchors (cross the other camera(s))
         dist_pos_cross.append(pairwise_distance(
-            features_cam[i], tf.gather(cross_anchor_n[i], labels_cam[i]), 1))
+            features_cam[i], tf.gather(cross_anchors_n[i], labels_cam[i]), 1))
 
         # tracklet association ranking to compute distance to negative pairs
         dist_neg.append(association_ranking(
