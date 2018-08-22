@@ -28,13 +28,13 @@ bash scripts/tf_convert_data.sh
 
 ## Running Experiments
 
-### training: 
+### Training: 
 
 Train models and extract features. (Need to supply your paths in the following `.sh` file. Check the TODO comments in the `.sh` file.)
 
-Training model implementation include the following .py files:
-* `train_dal.py`: build and run training graph.
-* `association.py`: build anchor learning graph and compute association loss.
+Model implementation include the following `.py` files:
+* `train_dal.py`: build and run the training graph.
+* `association.py`: build the anchor learning graph and compute the association losses.
 * `network.py`: define the network.
 * `utils.py`: data preparation.
 
@@ -48,7 +48,7 @@ bash scripts/train_MARS.sh
 You can also modify the number of gpus by changing the flag `--num_gpus`. (eg. `--num_gpus=2`).
 
 
-### testing: 
+### Testing: 
 
 Test model performance in matlab.
 Evaluation codes are placed under the directory `evaluation`.
@@ -62,10 +62,20 @@ clear; model_name = 'mobilenet_b64_dal'; CMC_mAP_MARS
 ## Citation
 Please cite our paper if you use our code/method.
 
+### Bibtex:
+
+```
+@inproceedings{chen2018bmvc,
+  title={Deep Association Learning for Unsupervised Video Person Re-identification},
+  author={Chen, Yanbei and Zhu, Xiatian and Gong, Shaogang},
+  booktitle={Proceedings of the British Machine Vision Conference (BMVC)},
+  year={2018}
+}
+```
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
 
 
 ## References
