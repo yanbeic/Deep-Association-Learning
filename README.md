@@ -60,7 +60,7 @@ clear; model_name = 'mobilenet_b64_dal'; CMC_mAP_MARS
 ```
 
 ## Citation
-Please cite our paper if you use our code/method.
+Please refer to the following if this repository is useful for your research.
 
 ### Bibtex:
 
@@ -84,4 +84,10 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 [3] [Hirzer et al. Person Re-Identification by Descriptive and Discriminative Classification. SCIA 2011.](https://files.icg.tugraz.at/seafhttp/files/ba284964-6e03-4261-bb39-e85280707598/hirzer_scia_2011.pdf) <br />
 [4] [Wang et al. Person Re-Identification by Video Ranking. ECCV 2014.](http://www.eecs.qmul.ac.uk/~xiatian/papers/ECCV14/WangEtAl_ECCV14.pdf) <br />
 [5] [Zheng et al. MARS: A Video Benchmark for Large-Scale Person Re-identification. ECCV 2016.](http://www.liangzheng.com.cn/Project/project_mars.html) <br /> 
+
+
+## Acknowledgements
+
+This repository is partially built upon the [tensorflow/models](https://github.com/tensorflow/models/tree/master/research/slim) repository. The evaluation code (cmc & mAP) is partially borrowed from the [MARS-evaluation](https://github.com/liangzheng06/MARS-evaluation) repository. 
+
 
