@@ -1,6 +1,6 @@
 # Deep-Association-Learning
 
-[Tensorflow](https://www.tensorflow.org/) Implementation of Paper [Chen et al. Deep Association Learning for Unsupervised Video Person Re-identification. BMVC2018](http://bmvc2018.org/papers/0066.pdf).
+[Tensorflow](https://www.tensorflow.org/) Implementation of the paper [Chen et al. Deep Association Learning for Unsupervised Video Person Re-identification. BMVC2018](https://arxiv.org/pdf/1808.07301.pdf). You may refer to our [poster](https://github.com/yanbeic/Deep-Association-Learning/poster/bmvc-2018.pdf) for a quick overview.
 
 
 ## Getting Started
@@ -19,7 +19,8 @@ Matlab. (For model evaluation)
 1. Download ImageNet pretrained models: [mobilenet_v1](http://download.tensorflow.org/models/mobilenet_v1_2018_02_22/mobilenet_v1_1.0_224.tgz) [1], [resnet_v1_50](http://download.tensorflow.org/models/resnet_v1_50_2016_08_28.tar.gz) [2].
 
 
-2. Convert image data to tfrecords. (Need to supply your paths in the following `.sh` file. Check the TODO comments in the `.sh` file.)
+2. Convert image data to tfrecords. 
+(Need to supply your paths in the following `.sh` file. Check the `TODO` comments in the `.sh` file.)
 
 ```
 bash scripts/tf_convert_data.sh
@@ -30,7 +31,8 @@ bash scripts/tf_convert_data.sh
 
 ### Training: 
 
-Train models and extract features. (Need to supply your paths in the following `.sh` file. Check the TODO comments in the `.sh` file.)
+Train models and extract features. 
+(Need to supply your paths in the following `.sh` file. Check the `TODO` comments in the `.sh` file.)
 
 Model implementation include the following `.py` files:
 * `train_dal.py`: build and run the training graph.
