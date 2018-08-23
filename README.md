@@ -1,6 +1,6 @@
 # Deep-Association-Learning
 
-[Tensorflow](https://www.tensorflow.org/) Implementation of the paper [Chen et al. Deep Association Learning for Unsupervised Video Person Re-identification. BMVC2018](https://arxiv.org/pdf/1808.07301.pdf). You may refer to our [poster](https://github.com/yanbeic/Deep-Association-Learning/poster/bmvc-2018.pdf) for a quick overview.
+[Tensorflow](https://www.tensorflow.org/) Implementation of the paper [Chen et al. Deep Association Learning for Unsupervised Video Person Re-identification. BMVC2018](https://arxiv.org/pdf/1808.07301.pdf). You may refer to our [poster](https://github.com/yanbeic/Deep-Association-Learning/blob/master/poster/bmvc18-poster.pdf) for a quick overview.
 
 
 ## Getting Started
