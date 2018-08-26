@@ -138,6 +138,7 @@ def cyclic_ranking(intra_anchors_batch_n, same_anchors_n, other_anchors_n,
 
     # (3) consistency condition
     consistent = tf.cast(tf.equal(tf.cast(labels_cam, dtype=tf.int32), tf.squeeze(rank1, squeeze_dims=1)), tf.int32)
+    # start_sign: control when to start cross-camera association
     consistent = tf.cast(consistent * tf.cast(start_sign, tf.int32), tf.bool)
 
     return consistent, rank1_anchors
