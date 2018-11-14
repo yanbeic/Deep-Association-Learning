@@ -7,11 +7,10 @@
 
 ### Prerequisites:
 
-Datasets: [PRID2011](https://www.tugraz.at/institute/icg/research/team-bischof/lrs/downloads/PRID11/) [3], [iLIDS-VIDS](http://www.eecs.qmul.ac.uk/~xiatian/downloads_qmul_iLIDS-VID_ReID_dataset.html) [4], [MARS](http://www.liangzheng.com.cn/Project/project_mars.html) [5].
-
-Tensorflow version >= 1.4.0. (For model training)
-
-Matlab. (For model evaluation)
+- Datasets: [PRID2011](https://www.tugraz.at/institute/icg/research/team-bischof/lrs/downloads/PRID11/) [3], [iLIDS-VIDS](http://www.eecs.qmul.ac.uk/~xiatian/downloads_qmul_iLIDS-VID_ReID_dataset.html) [4], [MARS](http://www.liangzheng.com.cn/Project/project_mars.html) [5].
+- Python 2.7. 
+- Tensorflow version >= 1.4.0. (For model training)
+- Matlab. (For model evaluation)
 
 
 ### Data preparation:
